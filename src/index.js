@@ -1,7 +1,4 @@
-import ModalLink from './components/ModalLink';
-import SessionContext from './contexts/session';
-
-let App = {
+const App = {
     get AppBrowser() {
         return this.browser
     },
@@ -13,13 +10,22 @@ let App = {
     },
     set AppModal(value) {
         this.modal = value;
+    },
+    get ModalLink() {
+        return this.modalLink;
+    },
+    set ModalLink(value) {
+        this.modalLink = value;
+    },
+    get SessionContext() {
+        return this.sessionContext
+    },
+    set SessionContext(value) {
+        this.sessionContext = value;
     }
 };
-
-let funwebLib = {
-    ModalLink: ModalLink,
-    SessionContext: SessionContext,
-    App: App,
-}
-
-export default funwebLib;
+export default App;
+export let AppBrowser = App.AppBrowser;
+export let AppModal = App.AppModal;
+export let ModalLink = App.ModalLink;
+export let SessionContext = App.SessionContext;
