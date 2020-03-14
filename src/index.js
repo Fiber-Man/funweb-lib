@@ -5,10 +5,10 @@ const App = {
     set AppBrowser(value) {
         this.browser = value;
     },
-    get AppModal() {
+    get AppSwitch() {
         return this.modal
     },
-    set AppModal(value) {
+    set AppSwitch(value) {
         this.modal = value;
     },
     get ModalLink() {
@@ -26,6 +26,6 @@ const App = {
 };
 export default App;
 export let AppBrowser = App.AppBrowser;
-export let AppModal = App.AppModal;
+export let AppSwitch = App.AppSwitch;
 export let ModalLink = App.ModalLink;
 export let SessionContext = App.SessionContext;
