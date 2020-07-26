@@ -23,10 +23,10 @@ const App = {
     set SessionContext(value) {
         this.sessionContext = value;
     },
-    get createPaginationContainer() {
+    get CreatePaginationContainer() {
         return this.createPaginationContainer
     },
-    set createPaginationContainer(value) {
+    set CreatePaginationContainer(value) {
         this.createPaginationContainer = value;
     }
 };
@@ -35,4 +35,4 @@ export let AppBrowser = App.AppBrowser;
 export let AppSwitch = App.AppSwitch;
 export let ModalLink = App.ModalLink;
 export let SessionContext = App.SessionContext;
-export let createPaginationContainer = App.createPaginationContainer;
+export let CreatePaginationContainer = App.CreatePaginationContainer;
